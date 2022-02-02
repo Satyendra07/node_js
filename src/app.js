@@ -4,6 +4,8 @@ const hbs = require('hbs')
 
 const app = express();
 
+const port = process.env.PORT || 3000; 
+
 const partialsPath = path.join(__dirname,'../partials');
 
 
@@ -42,6 +44,6 @@ const userRouter = require("../routes/users");
 app.use('/users',userRouter);
 
 
-app.listen(3000, ()=>{
-    console.log('server is up on port 3000');
+app.listen(port, ()=>{
+    console.log(`server is up on port ${port}`);
 });
