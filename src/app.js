@@ -17,7 +17,7 @@ hbs.registerPartials(partialsPath);
 
 app.get('/', (req, res)=>{
     // res.send('hello k')
-     //res.json({error :'msg'})
+     //res.json({error :'msg'} )
      //res.download('app.js')
      res.render('index',{textasda:'world',
     'title':"index"})
